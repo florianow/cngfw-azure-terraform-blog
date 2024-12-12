@@ -26,7 +26,7 @@ resource "azurerm_virtual_hub" "hub" {
 }
 
 resource "azurerm_palo_alto_virtual_network_appliance" "nva" {
-  name           = "terraform-nva"
+  name           = var.pa_ngfw_name
   virtual_hub_id = azurerm_virtual_hub.hub.id
 }
 

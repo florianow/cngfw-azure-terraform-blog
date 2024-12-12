@@ -31,3 +31,16 @@ output "firewall_name" {
 output "network_admins_azuread_group_id" {
   value = azuread_group.network_admins.object_id
 }
+
+output "principal_id" {
+  value = azuread_service_principal.spn_paloalto.object_id
+}
+
+output "client_id" {
+  value = azuread_service_principal.spn_paloalto.client_id
+}
+
+output "client_secret" {
+  value     = azuread_service_principal_password.spn_paloalto.value
+  sensitive = true
+}

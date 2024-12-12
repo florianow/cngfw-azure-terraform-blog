@@ -50,3 +50,8 @@ variable "pa_ngfw_name" {
   description = "Name of the Palo Alto NGFW"
   type        = string
 }
+
+variable "scope" {
+  description = "The scope for the resources"
+  type        = string
+}
