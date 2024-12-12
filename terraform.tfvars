@@ -1,0 +1,10 @@
+resource_group_name                 = "my-resource-group"
+region                              = "eastus"
+network_admin_group                 = "NetworkAdmins"
+connectivity_scope                  = "/subscriptions/00000000-0000-0000-0000-000000000000" # replace with your actual scope
+landingzone_scope                   = "/subscriptions/00000000-0000-0000-0000-000000000000" # replace with your actual scope
+cloudfoundation                     = "MyCloudFoundation"
+cloudfoundation_deploy_principal_id = "00000000-0000-0000-0000-000000000000" # replace with your actual principal ID
+address_space                       = ["10.0.0.0/16"]
+hub_name                            = "my-hub"
+pa_ngfw_name                        = "my-pa-ngfw"
