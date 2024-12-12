@@ -55,3 +55,8 @@ variable "scope" {
   description = "The scope for the resources"
   type        = string
 }
+
+variable "service_principal_name" {
+  description = "The name of the service principal"
+  type        = string
+}
